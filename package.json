@@ -1,5 +1,5 @@
 {
-  "name": "SwiftJS",
+  "name": "swift.js",
   "version": "0.0.1",
   "description": "a Simple MVC framework built on express",
   "main": "index.js",

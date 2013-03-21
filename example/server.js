@@ -1,10 +1,10 @@
 var express = require("express"),
     app = express(),
     namespace = require('express-namespace'),
-    expressMVC = require('./../index'),
+    swift = require('./../index'),
     port = parseInt(process.env.PORT, 10) || 3000;
 
-expressMVC.app(app,  __dirname + '/app');
+swift.app(app,  __dirname + '/app');
 
 app.configure(function () {
     app.use(express.methodOverride());
