@@ -1,6 +1,5 @@
 var express = require("express"),
     app = express(),
-    namespace = require('express-namespace'),
     swift = require('./../index'),
     port = parseInt(process.env.PORT, 10) || 3000;
 
