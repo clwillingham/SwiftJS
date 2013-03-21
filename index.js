@@ -10,6 +10,16 @@ function contains(a, obj) {
     return false;
 }
 
+function setRenderRoot(viewRoot){
+    return function(req, res, next){
+        var _render = res.render;
+        res.render = function(view, options, callback) {
+            _render.call(res, viewRoot + view, options, callback);
+        };
+        next();
+    }
+}
+
 exports.app = function(app, appDirOrAppRootUrl, appDir){
     var rootUrl = '';
 
@@ -39,13 +49,13 @@ exports.app = function(app, appDirOrAppRootUrl, appDir){
             var path = rootUrl + root + (route.split(' ')[1] || '');
             console.log(method + " " + path + ': ' + routes[route]);
             if(typeof(routes[route]) == 'string'){
-                app[method](path, actions[routes[route]]);
+                app[method](path, setRenderRoot(controllerName + '/'), actions[routes[route]]);
             }else{
                 var middlewhare = [];
                 for(var i in routes[route]){
                     middlewhare.push(actions[routes[route][i]])
                 }
-                app[method].apply(app, [path].concat(middlewhare));
+                app[method].apply(app, [path].concat(setRenderRoot(controllerName + '/'), middlewhare));
             }
         }
     }
