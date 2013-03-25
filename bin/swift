@@ -1,0 +1,57 @@
+#!/usr/bin/env node
+
+var program = require('commander'),
+    handlebars = require('handlebars'),
+    path = require('path'),
+    fs = require('fs');
+
+function generateTemplate(templateFile, outputDir, args){
+    console.log('WRITE: ' + outputDir);
+    var template = handlebars.compile(fs.readFileSync(__dirname+'/../templates/'+templateFile, 'utf-8'))(args);
+    fs.writeFileSync(outputDir, template);
+}
+
+function generateController(name, args){
+    var root = './'+args.app || '.';
+    generateTemplate('controller.js.tt', root + '/controllers/'+name+'.js', {name: name, root: args.root});
+    fs.mkdirSync(root + '/views/'+name);
+    console.log('controller written to ./controllers/'+name+'.js');
+}
+
+program
+    .version('0.0.1');
+
+program
+    .command('gen-app <name>')
+    .description('generate main app')
+    .option('-s --server', 'generate main server file as well')
+    .action(function(name, args){
+        var root = './'+name;
+        var modelsDir = root+'/models';
+        var controllersDir = root+'/controllers';
+        var middlewareDir = root+'/middleware';
+        var viewsDir = root+'/views';
+
+        fs.mkdirSync(root);
+        fs.mkdirSync(modelsDir);
+        fs.mkdirSync(controllersDir);
+        fs.mkdirSync(middlewareDir);
+        fs.mkdirSync(viewsDir);
+        if(args.server){
+            var data = handlebars.compile(fs.readFileSync(__dirname+'/../templates/server.js.tt', 'utf-8'))({name: name});
+            fs.writeFileSync('./server.js', data);
+        }
+        generateController('Index', {root: '/', app: name});
+        generateTemplate('index.ejs.tt', viewsDir+'/Index/index.ejs');
+    });
+
+program
+    .command('gen-controller <name>')
+    .description('generate a controller')
+    .option('-r --root <root>', 'Root url path')
+    .option('-a --app <app>', 'App name (you can also just cd into app root path instead)')
+    .action(generateController);
+
+
+
+program.parse(process.argv);

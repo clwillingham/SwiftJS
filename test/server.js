@@ -4,7 +4,7 @@ var express = require("express"),
     mongoose = require('mongoose'),
     port = parseInt(process.env.PORT, 10) || 3000;
 
-mongoose.connect('mongodb://localhost/swiftTest');
+mongoose.connect('mongodb://localhost/app');
 swift.app(app,  __dirname + '/app');
 
 app.configure(function () {

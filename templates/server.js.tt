@@ -2,10 +2,10 @@ var express = require("express"),
     app = express(),
     swift = require('../index'),
     mongoose = require('mongoose'),
-    port = parseInt(process.env.PORT, 10) || 3000;
+    port = parseInt(process.env.PORT, 10) || {{name}};
 
-mongoose.connect('mongodb://localhost/swiftTest');
-swift.app(app,  __dirname + '/app');
+mongoose.connect('mongodb://localhost/{{name}}');
+swift.app(app,  __dirname + '/{{name}}');
 
 app.configure(function () {
     app.use(express.methodOverride());

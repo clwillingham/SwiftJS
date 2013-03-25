@@ -10,7 +10,7 @@
 module.exports = {
     root: '/',
     routes: {
-        'get': ['someMiddlewhere', 'index'],
+        'get': ['auth.adminOnly', 'index'],
         'get test1': 'test1',
         'get test2': 'test2',
         'get test3': 'test3'
@@ -18,9 +18,13 @@ module.exports = {
 
     actions: {
         someMiddlewhere: function(req, res, next){
-            next();
+            models.User.find({}, function(err, doc){
+                req.users = doc;
+                next(err);
+            })
         },
         index: function(req, res){
+            console.log(req.users);
             res.render('index');
         },
         test1: function(req, res){
