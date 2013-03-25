@@ -1,8 +1,8 @@
 var express = require("express"),
     app = express(),
-    swift = require('../index'),
+    swift = require('swift.js'),
     mongoose = require('mongoose'),
-    port = parseInt(process.env.PORT, 10) || {{name}};
+    port = parseInt(process.env.PORT, 10) || 3000;
 
 mongoose.connect('mongodb://localhost/{{name}}');
 swift.app(app,  __dirname + '/{{name}}');

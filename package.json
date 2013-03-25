@@ -1,13 +1,15 @@
 {
   "name": "swift.js",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "description": "a Simple MVC framework built on express",
   "main": "index.js",
   "directories": {
     "example": "example"
   },
   "dependencies": {
-    "express": "~3.1.0"
+    "express": "~3.1.0",
+    "handlebars": "*",
+    "commander": "*"
   },
   "devDependencies": {
       "ejs": "~0.8.3"

@@ -18,32 +18,61 @@ function generateController(name, args){
     console.log('controller written to ./controllers/'+name+'.js');
 }
 
+function generatePackageFile(name){
+    var pkg = {
+        name: name,
+        version: '0.0.1',
+        private:true,
+        dependencies: {
+            express: '*',
+            'swift.js': '*',
+            'mongoose': '*',
+            'ejs': '*'
+        },
+        scripts: { start: 'node server' }
+    }
+    fs.writeFile('./package.json', JSON.stringify(pkg));
+}
+
+function generateApp(name, args){
+    var root = './'+name;
+    var modelsDir = root+'/models';
+    var controllersDir = root+'/controllers';
+    var middlewareDir = root+'/middleware';
+    var viewsDir = root+'/views';
+
+    fs.mkdirSync(root);
+    fs.mkdirSync(modelsDir);
+    fs.mkdirSync(controllersDir);
+    fs.mkdirSync(middlewareDir);
+    fs.mkdirSync(viewsDir);
+    if(args.server){
+        var data = handlebars.compile(fs.readFileSync(__dirname+'/../templates/server.js.tt', 'utf-8'))({name: name});
+        fs.writeFileSync('./server.js', data);
+    }
+    generateController('Index', {root: '/', app: name});
+    generateTemplate('index.ejs.tt', viewsDir+'/Index/index.ejs');
+}
+
 program
     .version('0.0.1');
 
 program
     .command('gen-app <name>')
-    .description('generate main app')
+    .description('generate an app structure')
     .option('-s --server', 'generate main server file as well')
-    .action(function(name, args){
-        var root = './'+name;
-        var modelsDir = root+'/models';
-        var controllersDir = root+'/controllers';
-        var middlewareDir = root+'/middleware';
-        var viewsDir = root+'/views';
+    .action(generateApp);
 
-        fs.mkdirSync(root);
-        fs.mkdirSync(modelsDir);
-        fs.mkdirSync(controllersDir);
-        fs.mkdirSync(middlewareDir);
-        fs.mkdirSync(viewsDir);
-        if(args.server){
-            var data = handlebars.compile(fs.readFileSync(__dirname+'/../templates/server.js.tt', 'utf-8'))({name: name});
-            fs.writeFileSync('./server.js', data);
-        }
-        generateController('Index', {root: '/', app: name});
-        generateTemplate('index.ejs.tt', viewsDir+'/Index/index.ejs');
+program
+    .command('gen-project <name>')
+    .description('Generate project')
+    .action(function(name, args){
+        fs.mkdirSync(name);
+        process.chdir('./'+name);
+        generateApp('app', {server: true});
+        generatePackageFile(name);
     });
+
 
 program
     .command('gen-controller <name>')
