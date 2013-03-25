@@ -81,6 +81,11 @@ program
     .option('-a --app <app>', 'App name (you can also just cd into app root path instead)')
     .action(generateController);
 
-
+program
+    .command('s')
+    .description('start server')
+    .action(function(args){
+        require('../index.js').run(require(process.cwd()+'/config.json'), process.cwd());
+    });
 
 program.parse(process.argv);
