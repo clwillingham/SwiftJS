@@ -1,6 +1,6 @@
 {
   "name": "swift.js",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "description": "a Simple MVC framework built on express",
   "main": "index.js",
   "directories": {

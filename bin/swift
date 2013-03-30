@@ -81,6 +81,15 @@ program
     .option('-a --app <app>', 'App name (you can also just cd into app root path instead)')
     .action(generateController);
 
+program
+    .command('gen-model <name>')
+    .description('generate a model')
+    .option('-a --app <app>', 'App name (you can also just cd into app root path instead)')
+    .action(function(name, args){
+        var root = './'+args.app || '.';
+        generateTemplate('model.js.tt', root + '/models/'+name+'.js', {name: name.toLowerCase()});
+        console.log('controller written to ./models/'+name+'.js');
+    });
 
 
 program.parse(process.argv);
