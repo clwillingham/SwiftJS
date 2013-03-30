@@ -14,4 +14,42 @@ SailsJS is probably the closest to what i wanted, but i wanted something a littl
 How?
 --------
 
-further documentation coming soon, check the example project for now.
+Easy, first install Swift:
+```
+npm install -g swift.js
+```
+Then create a project:
+```
+swift gen-project MyProject
+```
+Then run the project
+```
+node server.js
+```
+oh... you want to actually make something more than a hello world? then keep on reading
+
+Controllers
+-----------
+Controllers in swift are split into two parts, Routes and Actions
+Routes map url routes to actions. Actions are response functions or middleware.
+```javascript
+module.exports = {
+    root: '/', //root is optional, if not set, root will be the name of the controller
+    routes: {
+//        'get': ['someMiddlewhere', 'index'], //call some middleware before calling index action.
+        'get /<route>': 'index' //or just call action directly (providing no path indicates root path for controller)
+    },
+
+    actions: {
+        index: function(req, res){
+            res.render('index'); //renders from directory views/Index/
+        }
+    }
+}
+```
+
+Views
+--------
+Nothing special has been done with views. Views are the same as express views.
+only importent detail about views is that the res.render() function renders views from views/<controller name>/
+instead of the root view. 

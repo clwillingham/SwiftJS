@@ -91,5 +91,11 @@ program
         console.log('controller written to ./models/'+name+'.js');
     });
 
+program
+    .command('s')
+    .description('start server')
+    .action(function(args){
+        require('../index.js').run(require(process.cwd()+'/config.json'), process.cwd());
+    });
 
 program.parse(process.argv);
