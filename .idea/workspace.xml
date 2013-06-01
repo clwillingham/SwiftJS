@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="37e5c9ad-3679-48d7-b2f4-be4efc8a64eb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/app/controllers/Main.js" afterPath="$PROJECT_DIR$/example/app/controllers/Main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.js" afterPath="$PROJECT_DIR$/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/swift" afterPath="$PROJECT_DIR$/bin/swift" />
     </list>
     <ignored path="easyNode.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -17,7 +14,7 @@
     <file path="/swift.js" changelist="37e5c9ad-3679-48d7-b2f4-be4efc8a64eb" time="1364146417827" ignored="false" />
     <file path="/appGenerator.js" changelist="37e5c9ad-3679-48d7-b2f4-be4efc8a64eb" time="1364146617831" ignored="false" />
     <file path="/auth.js" changelist="37e5c9ad-3679-48d7-b2f4-be4efc8a64eb" time="1364161760685" ignored="false" />
-    <file path="/swift" changelist="37e5c9ad-3679-48d7-b2f4-be4efc8a64eb" time="1364672927335" ignored="false" />
+    <file path="/swift" changelist="37e5c9ad-3679-48d7-b2f4-be4efc8a64eb" time="1370113597527" ignored="false" />
     <file path="/server.js.tt" changelist="37e5c9ad-3679-48d7-b2f4-be4efc8a64eb" time="1364175300476" ignored="false" />
     <file path="/controller.js.tt" changelist="37e5c9ad-3679-48d7-b2f4-be4efc8a64eb" time="1364167126165" ignored="false" />
     <file path="/Index.js" changelist="37e5c9ad-3679-48d7-b2f4-be4efc8a64eb" time="1364169282622" ignored="false" />
@@ -105,10 +102,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="package.json" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="package.json" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="22" selection-start="289" selection-end="289" vertical-scroll-proportion="0.3504673">
+            <state line="7" column="4" selection-start="176" selection-end="176" vertical-scroll-proportion="-3.125">
               <folding />
             </state>
           </provider>
@@ -123,10 +120,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="swift" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="swift" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bin/swift">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="79" column="27" selection-start="2351" selection-end="2351" vertical-scroll-proportion="0.0">
+            <state line="31" column="41" selection-start="1009" selection-end="1009" vertical-scroll-proportion="0.5685841">
               <folding />
             </state>
           </provider>
@@ -166,10 +163,10 @@
         <option value="$PROJECT_DIR$/test/app/views/Index/index.ejs" />
         <option value="$PROJECT_DIR$/templates/server.js.tt" />
         <option value="$PROJECT_DIR$/templates/model.js.tt" />
-        <option value="$PROJECT_DIR$/bin/swift" />
         <option value="$PROJECT_DIR$/index.js" />
         <option value="$PROJECT_DIR$/example/app/controllers/Main.js" />
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/bin/swift" />
       </list>
     </option>
   </component>
@@ -622,13 +619,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bin/swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="27" selection-start="2351" selection-end="2351" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/app/controllers/Index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="6" selection-start="262" selection-end="262" vertical-scroll-proportion="0.0">
@@ -673,7 +663,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="22" selection-start="289" selection-end="289" vertical-scroll-proportion="0.3504673">
+        <state line="7" column="4" selection-start="176" selection-end="176" vertical-scroll-proportion="-3.125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="41" selection-start="1009" selection-end="1009" vertical-scroll-proportion="0.5685841">
           <folding />
         </state>
       </provider>

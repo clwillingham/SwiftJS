@@ -24,14 +24,14 @@ function generatePackageFile(name){
         version: '0.0.1',
         private:true,
         dependencies: {
-            express: '*',
+            'express': '*',
             'swift.js': '*',
             'mongoose': '*',
             'ejs': '*'
         },
         scripts: { start: 'node server' }
     }
-    fs.writeFile('./package.json', JSON.stringify(pkg));
+    fs.writeFile('./package.json', JSON.stringify(pkg, null, 4));
 }
 
 function generateApp(name, args){
