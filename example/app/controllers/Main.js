@@ -10,7 +10,7 @@
 module.exports = {
     root: '/',
     routes: {
-        'get': ['auth.adminOnly', 'index'],
+        'get': ['someMiddlewhere', 'index'],
         'get test1': 'test1',
         'get test2': 'test2',
         'get test3': 'test3'
@@ -18,7 +18,8 @@ module.exports = {
 
     actions: {
         someMiddlewhere: function(req, res, next){
-            models.User.find({}, function(err, doc){
+            User.find({}, function(err, doc){
+                console.log("DOC: " + doc);
                 req.users = doc;
                 next(err);
             })

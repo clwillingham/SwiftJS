@@ -1,4 +1,5 @@
-var fs = require('fs');
+var fs = require('fs'),
+    _ = require('underscore');
 
 exports.models = {};
 
@@ -24,8 +25,9 @@ function setRenderRoot(viewRoot){
 
 function addModels(){
     return function(req, res, next){
-        this.models = exports.models;
-        next()
+//        this.models = exports.models;
+        _.extend(this, exports.models);
+        next();
     }
 }
 

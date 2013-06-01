@@ -10,6 +10,7 @@
     "express": "~3.1.0",
     "handlebars": "*",
     "commander": "*",
+    "underscore": "*",
     "mongoose": "*",
     "ejs": "~0.8.3"
   },
