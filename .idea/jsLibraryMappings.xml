@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="JavaScriptLibraryMappings">
-    <file url="file://$PROJECT_DIR$/bin/swift" libraries="{Node.js Globals, Node.js v0.10.1 Core Modules}" />
-    <file url="file://$PROJECT_DIR$/example/app/controllers/Main.js" libraries="{Node.js v0.10.1 Core Modules}" />
-    <file url="file://$PROJECT_DIR$/example/app/models/User.js" libraries="{Node.js Globals, Node.js v0.10.1 Core Modules}" />
-    <file url="file://$PROJECT_DIR$/example/server.js" libraries="{Node.js Globals, Node.js v0.10.1 Core Modules}" />
-    <file url="file://$PROJECT_DIR$/index.js" libraries="{Node.js Globals, Node.js v0.10.1 Core Modules}" />
-    <file url="file://$PROJECT_DIR$/templates/server.js.tt" libraries="{Node.js Globals, Node.js v0.10.1 Core Modules}" />
-    <file url="file://$PROJECT_DIR$/test/server.js" libraries="{Node.js Globals, Node.js v0.10.1 Core Modules}" />
+    <file url="file://$PROJECT_DIR$/bin/swift" libraries="{Node.js Globals}" />
+    <file url="file://$PROJECT_DIR$/example/app/models/User.js" libraries="{Node.js Globals}" />
+    <file url="file://$PROJECT_DIR$/example/server.js" libraries="{Node.js Globals, Node.js v0.8.17 Core Modules}" />
+    <file url="file://$PROJECT_DIR$/index.js" libraries="{Node.js Globals}" />
+    <file url="file://$PROJECT_DIR$/templates/server.js.tt" libraries="{Node.js Globals}" />
+    <file url="file://$PROJECT_DIR$/test/server.js" libraries="{Node.js Globals}" />
   </component>
 </project>
 

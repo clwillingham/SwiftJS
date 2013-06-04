@@ -120,14 +120,18 @@ exports.app = function(app, appDirOrAppRootUrl, appDir){
                 console.log(method + " " + path + ': ' + routes[route]);
                 if(typeof(routes[route]) == 'string'){
                     app[method](path, setRenderRoot(controllerName + '/'), addModels(), actions[routes[route]]);
+                }else if(typeof(routes[route]) == 'function'){
+                    app[method](path, setRenderRoot(controllerName + '/'), addModels(), routes[route]);
                 }else{
                     var localMiddleware = [];
                     for(var i in routes[route]){
                         var actionName = routes[route][i];
                         var action = null;
-                        if(actionName.indexOf('.') !== -1){
+                        if(typeof(actionName) == 'string' && actionName.indexOf('.') !== -1){
                             var actionPath = actionName.split('.');
                             action = middleware[actionPath[0]][actionPath[1]];
+                        }else if(typeof(actionName) == 'function'){
+                            action = actionName;
                         }else{
                             action = actions[actionName];
                         }

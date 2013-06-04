@@ -2,15 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="37e5c9ad-3679-48d7-b2f4-be4efc8a64eb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/swift" afterPath="$PROJECT_DIR$/bin/swift" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/example/app/controllers/Main.js" afterPath="$PROJECT_DIR$/example/app/controllers/Main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/SwiftJS.iml" afterPath="$PROJECT_DIR$/.idea/SwiftJS.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.js" afterPath="$PROJECT_DIR$/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="easyNode.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/index.js" changelist="37e5c9ad-3679-48d7-b2f4-be4efc8a64eb" time="1370113301109" ignored="false" />
-    <file path="/Dummy.txt" changelist="37e5c9ad-3679-48d7-b2f4-be4efc8a64eb" time="1370113138174" ignored="false" />
+    <file path="/index.js" changelist="37e5c9ad-3679-48d7-b2f4-be4efc8a64eb" time="1370309155909" ignored="false" />
+    <file path="/Dummy.txt" changelist="37e5c9ad-3679-48d7-b2f4-be4efc8a64eb" time="1370308625043" ignored="false" />
     <file path="/User.js" changelist="37e5c9ad-3679-48d7-b2f4-be4efc8a64eb" time="1364143997337" ignored="false" />
     <file path="/server.js" changelist="37e5c9ad-3679-48d7-b2f4-be4efc8a64eb" time="1364143838109" ignored="false" />
-    <file path="/Main.js" changelist="37e5c9ad-3679-48d7-b2f4-be4efc8a64eb" time="1370113346875" ignored="false" />
+    <file path="/Main.js" changelist="37e5c9ad-3679-48d7-b2f4-be4efc8a64eb" time="1370308895693" ignored="false" />
     <file path="/swift.js" changelist="37e5c9ad-3679-48d7-b2f4-be4efc8a64eb" time="1364146417827" ignored="false" />
     <file path="/appGenerator.js" changelist="37e5c9ad-3679-48d7-b2f4-be4efc8a64eb" time="1364146617831" ignored="false" />
     <file path="/auth.js" changelist="37e5c9ad-3679-48d7-b2f4-be4efc8a64eb" time="1364161760685" ignored="false" />
@@ -60,7 +64,7 @@
       <file leaf-file-name="server.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/example/server.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="23" selection-start="507" selection-end="507" vertical-scroll-proportion="0.0">
+            <state line="8" column="0" selection-start="264" selection-end="264" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -69,7 +73,7 @@
       <file leaf-file-name="Main.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/example/app/controllers/Main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="32" selection-start="247" selection-end="247" vertical-scroll-proportion="0.0">
+            <state line="12" column="55" selection-start="270" selection-end="270" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -84,19 +88,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="index.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="39" selection-start="639" selection-end="639" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="server.js.tt" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/server.js.tt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="32" selection-start="87" selection-end="87" vertical-scroll-proportion="0.0">
+            <state line="123" column="103" selection-start="4138" selection-end="4138" vertical-scroll-proportion="-0.10869565">
               <folding />
             </state>
           </provider>
@@ -105,25 +100,7 @@
       <file leaf-file-name="package.json" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="4" selection-start="176" selection-end="176" vertical-scroll-proportion="-3.125">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="controller.js.tt" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/controller.js.tt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="34" selection-start="447" selection-end="447" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="swift" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/bin/swift">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="41" selection-start="1009" selection-end="1009" vertical-scroll-proportion="0.5685841">
+            <state line="7" column="4" selection-start="176" selection-end="176" vertical-scroll-proportion="-4.576923">
               <folding />
             </state>
           </provider>
@@ -145,8 +122,8 @@
     </option>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/templates/controller.js.tt" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/templates/server.js.tt" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/templates/controller.js.tt" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
@@ -163,18 +140,18 @@
         <option value="$PROJECT_DIR$/test/app/views/Index/index.ejs" />
         <option value="$PROJECT_DIR$/templates/server.js.tt" />
         <option value="$PROJECT_DIR$/templates/model.js.tt" />
-        <option value="$PROJECT_DIR$/index.js" />
-        <option value="$PROJECT_DIR$/example/app/controllers/Main.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/bin/swift" />
+        <option value="$PROJECT_DIR$/example/app/controllers/Main.js" />
+        <option value="$PROJECT_DIR$/index.js" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-1" />
-    <option name="y" value="89" />
-    <option name="width" value="1602" />
-    <option name="height" value="874" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1616" />
+    <option name="height" value="876" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -402,15 +379,15 @@
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.26426896" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="appearance" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$USER_HOME$/.nvm/v0.10.1/bin/node" />
+    <property name="options.lastSelected" value="appearance" />
+    <property name="last_opened_file_path" value="C:/Program Files/nodejs/node.exe" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RunManager" selected="Node.js.server.js">
-    <configuration default="false" name="server.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="$USER_HOME$/.nvm/v0.10.1/bin/node" path-to-js-file="server.js" working-dir="$PROJECT_DIR$/example">
+    <configuration default="false" name="server.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="C:/Program Files/nodejs/node" path-to-js-file="server.js" working-dir="$PROJECT_DIR$/example">
       <RunnerSettings RunnerId="NodeJS.run" />
       <ConfigurationWrapper RunnerId="NodeJS.run" />
       <method />
@@ -471,17 +448,17 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="89" width="1602" height="874" extended-state="6" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24650572" sideWeight="0.6750349" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24603678" sideWeight="0.67688024" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32496512" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3231198" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -574,9 +551,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.ejs.tt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="70" selection-end="70" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="7" column="0" selection-start="70" selection-end="70" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bin/swift">
@@ -607,9 +582,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/index.ejs.tt">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="70" selection-end="70" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="7" column="0" selection-start="70" selection-end="70" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/model.js.tt">
@@ -626,23 +599,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/example/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="23" selection-start="507" selection-end="507" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="39" selection-start="639" selection-end="639" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/server.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="25" selection-start="201" selection-end="201" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="4" selection-start="176" selection-end="176" vertical-scroll-proportion="-4.576923">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/swift">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="41" selection-start="1009" selection-end="1009" vertical-scroll-proportion="0.5685841">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/example/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="0" selection-start="264" selection-end="264" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -656,21 +636,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/example/app/controllers/Main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="32" selection-start="247" selection-end="247" vertical-scroll-proportion="0.0">
+        <state line="12" column="55" selection-start="270" selection-end="270" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
+    <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="4" selection-start="176" selection-end="176" vertical-scroll-proportion="-3.125">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bin/swift">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="41" selection-start="1009" selection-end="1009" vertical-scroll-proportion="0.5685841">
+        <state line="123" column="103" selection-start="4138" selection-end="4138" vertical-scroll-proportion="-0.10869565">
           <folding />
         </state>
       </provider>

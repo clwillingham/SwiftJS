@@ -10,7 +10,7 @@
 module.exports = {
     root: '/',
     routes: {
-        'get': ['someMiddlewhere', 'index'],
+        'get': [function(req, res, next){next()}, 'index'],
         'get test1': 'test1',
         'get test2': 'test2',
         'get test3': 'test3'
